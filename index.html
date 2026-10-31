@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#14532d">
+
+  <title>Sarah Stock 2.0</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div>
+    <h1>🍾 Sarah Stock</h1>
+    <p>Gestion intelligente du dépôt</p>
+  </div>
+  <button id="logoutBtn" hidden>Déconnexion</button>
+</header>
+
+<main>
+
+  <!-- CONNEXION -->
+  <section id="authSection" class="card">
+    <h2>Bienvenue sur Sarah Stock</h2>
+    <p>Connectez-vous pour gérer votre dépôt.</p>
+
+    <form id="loginForm">
+      <label>Adresse e-mail</label>
+      <input id="email" type="email" required>
+
+      <label>Mot de passe</label>
+      <input id="password" type="password" required>
+
+      <button type="submit">Se connecter</button>
+    </form>
+
+    <button id="registerBtn">Créer un compte</button>
+    <button id="googleBtn">Continuer avec Google</button>
+
+    <p id="authMessage"></p>
+  </section>
+
+  <!-- APPLICATION -->
+  <section id="appSection" hidden>
+
+    <div class="welcome">
+      <h2>Tableau de bord</h2>
+      <p id="userEmail"></p>
+      <p id="userRole"></p>
+    </div>
+
+    <nav class="menu">
+      <button data-page="dashboard">Accueil</button>
+      <button data-page="products">Stocks</button>
+      <button data-page="sales">Ventes</button>
+      <button data-page="customers">Clients</button>
+      <button data-page="credits">Crédits</button>
+      <button data-page="expenses">Dépenses</button>
+      <button data-page="losses">Pertes</button>
+      <button data-page="suppliers">Fournisseurs</button>
+      <button data-page="reports">Statistiques</button>
+    </nav>
+
+    <div id="pageContent" class="card">
+      <h2>Bienvenue dans votre dépôt</h2>
+      <p>Sélectionnez une rubrique pour commencer.</p>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Sarah Stock 2.0 © 2026</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>

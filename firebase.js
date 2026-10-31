@@ -3,7 +3,7 @@ import { initializeApp } from
 
 import {
   getAuth,
-  onAuthStateChanged
+  onAuthStateChanged,
   GoogleAuthProvider,
   signInWithRedirect,
   getRedirectResult,
@@ -55,6 +55,7 @@ setPersistence(auth, browserLocalPersistence);
 export {
   app,
   auth,
+  onAuthStateChanged,
   db,
   googleProvider,
   signInWithRedirect,

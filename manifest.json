@@ -1,0 +1,12 @@
+{
+  "name": "Sarah Stock 2.0",
+  "short_name": "Sarah Stock",
+  "description": "Application de gestion de stock et de ventes",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f0fdf4",
+  "theme_color": "#14532d",
+  "orientation": "portrait",
+  "icons": []
+}

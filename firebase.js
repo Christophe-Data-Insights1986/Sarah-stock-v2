@@ -3,6 +3,7 @@ import { initializeApp } from
 
 import {
   getAuth,
+  onAuthStateChanged
   GoogleAuthProvider,
   signInWithRedirect,
   getRedirectResult,

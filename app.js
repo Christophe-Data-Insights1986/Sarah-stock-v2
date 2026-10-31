@@ -443,4 +443,16 @@ function escapeHTML(value) {
     '"': "&quot;",
     "'": "&#39;"
   })[character]);
+}// INSTALLATION DU SERVICE WORKER
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => {
+        console.log("Sarah Stock : mode hors connexion activé.");
+      })
+      .catch(error => {
+        console.error("Erreur service worker :", error);
+      });
+  });
 }
+
